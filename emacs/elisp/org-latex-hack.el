@@ -66,7 +66,7 @@ OPT-PLIST is the options plist for current buffer."
      ;; changed by wuyao721@163.com
      ;; beginning of the document
      "\n\\begin{document}\n\n"
-     "\n\\begin{CJK*}{UTF8}{gbsn}\n\n"
+     "\n\\begin{CJK*}{GBK}{song}\n\n"
      ;; insert the title
      (format
       "\n\n\\title{%s}\n"
