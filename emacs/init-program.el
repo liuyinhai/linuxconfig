@@ -22,7 +22,9 @@
 (setq imaxima-use-maxima-mode-flag t)
 (put 'narrow-to-region 'disabled nil)
 
-(require 'org-latex-hack)
+(cond
+ ((= 24 emacs-major-version)
+  (require 'org-latex-hack)))
 
 ;;octave mode
 (autoload 'octave-mode "octave-mod" nil t)
