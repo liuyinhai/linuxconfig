@@ -21,6 +21,13 @@ cd $YINHAI_PATH
 export SEGPATH='/search/liuyinhai/shopping/attribute_extractor/src'
 export TOOLBAR_SERVER_PATH='/search/liuyinhai/toolbar_remind/toolbar_remind_server/'
 export CURRENTPATH='/search/liuyinhai/ietools/usermodel/UserModel'
+export FRONTPATH='/usr/share/nginx/html'
+
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
 
 mkdir -p /search/.trash
 alias rm=trash
