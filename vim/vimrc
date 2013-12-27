@@ -1,6 +1,6 @@
 filetype plugin indent on
 autocmd FileType python setlocal et sta sw=4 sts=4
-
+syntax on
 set autoindent " same level indent
 set smartindent " next level indent
 set expandtab

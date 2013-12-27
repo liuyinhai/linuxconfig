@@ -22,6 +22,8 @@ export SEGPATH='/search/liuyinhai/shopping/attribute_extractor/src'
 export TOOLBAR_SERVER_PATH='/search/liuyinhai/toolbar_remind/toolbar_remind_server/'
 export CURRENTPATH='/search/liuyinhai/ietools/usermodel/UserModel'
 export FRONTPATH='/usr/share/nginx/html'
+export DOC='/search/liuyinhai/learn-research/doc'
+export SOGOU_DOC='/search/liuyinhai/learn-research/sogou-doc'
 
 alias ...='cd ../..'
 alias ....='cd ../../..'
