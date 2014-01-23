@@ -15,15 +15,16 @@ fi
 alias ds='du -h --max-depth=1|sort -n'
 
 #PS1=$
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
 export YINHAI_PATH='/search/liuyinhai/'
 cd $YINHAI_PATH
 
-export SEGPATH='/search/liuyinhai/shopping/attribute_extractor/src'
-export TOOLBAR_SERVER_PATH='/search/liuyinhai/toolbar_remind/toolbar_remind_server/'
 export CURRENTPATH='/search/liuyinhai/ietools/usermodel/UserModel'
 export FRONTPATH='/usr/share/nginx/html'
 export DOC='/search/liuyinhai/learn-research/doc'
 export SOGOU_DOC='/search/liuyinhai/learn-research/sogou-doc'
+export TERM_WEIGHT_PATH='/search/liuyinhai/term_weight/term-weight'
 
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -36,6 +37,7 @@ alias rm=trash
 alias rl='ls /search/.trash'
 alias ur=undelfile
 alias rt=cleartrash
+
 undelfile()
 {
 	mv -i /search/.trash/$@ ./
