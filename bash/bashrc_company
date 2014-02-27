@@ -2,29 +2,15 @@
 
 # User specific aliases and functions
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
 alias ll='ls -lhtr'
+alias la='ls -A'
 alias p='pwd'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-alias ds='du -h --max-depth=1|sort -n'
-
-#PS1=$
-export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-
-export YINHAI_PATH='/search/liuyinhai/'
-cd $YINHAI_PATH
-
-export CURRENTPATH='/search/liuyinhai/ietools/usermodel/UserModel'
-export FRONTPATH='/usr/share/nginx/html'
-export DOC='/search/liuyinhai/learn-research/doc'
-export SOGOU_DOC='/search/liuyinhai/learn-research/sogou-doc'
-export TERM_WEIGHT_PATH='/search/liuyinhai/term_weight/term-weight'
+alias ds='du -h --max-depth=1 | sort -n'
 
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -32,23 +18,24 @@ alias ..2='cd ../..'
 alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 
-mkdir -p /search/.trash
+export TRASH_PATH='/home/yinhailiu/.trash'
+mkdir -p ${TRASH_PATH}
 alias rm=trash
-alias rl='ls /search/.trash'
+alias rl='ls ${TRASH_PATH}'
 alias ur=undelfile
 alias rt=cleartrash
 
 undelfile()
 {
-	mv -i /search/.trash/$@ ./
+	mv -i ${TRASH_PATH}/$@ ./
 }
 trash()
 {
-	mv $@ /search/.trash/
+	mv $@ ${TRASH_PATH}/
 }
 
 cleartrash()
 {
 	read -p "clear sure?[n]" confirm
-	[ $confirm == 'y' ] || [ $confirm == 'Y' ]  && /bin/rm -rf /search/.trash/*
+	[ $confirm == 'y' ] || [ $confirm == 'Y' ]  && /bin/rm -rf ${TRASH_PATH}/*
 }

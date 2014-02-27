@@ -6,7 +6,7 @@
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 ;;(setq load-path (cons "~/.emacs.d/elisp/tramp" load-path))
 
-;;the configuration of appearance  of Emacs.n
+;;the configuration of appearance of Emacs
 (load "init-appear")
 
 ;;The shortcut for emacs.
