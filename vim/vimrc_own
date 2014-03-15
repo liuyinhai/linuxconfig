@@ -1,0 +1,33 @@
+set autoindent " same level indent
+set smartindent " next level indent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set backspace=indent,eol,start
+set hlsearch "highlight
+
+"set fenc=GB18030 "defalut coding
+"set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936 
+set nocp " or set nocompatible "close the vi compatible mode.
+
+set nonumber "dont display the number of line.
+set ai "auto indent ; or set autoindent
+set si "set smartindent indent smartly
+set tabstop=4 "set the length tab key equals four blanks
+set sw=4 "set shiftwidth set the next line indent with four blanks
+set ruler "dispay the state line below
+set incsearch "highlight increase search
+set showmatch "highlight the matched parentheses
+set matchtime=5 "the time of matched parentheses; unit: 0.1 second
+set ignorecase "ingore case when searing
+syntax on "
+
+
+" let Tlist_Show_One_File=1    
+" let Tlist_Exit_OnlyWindow=1    
+" let g:winManagerWindowLayout='FileExplorer|TagList'    
+" nmap wm :WMToggle<cr> 
+" filetype plugin indent on
+" autocmd FileType python setlocal et sta sw=4 sts=4
+

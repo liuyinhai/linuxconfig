@@ -18,7 +18,11 @@ alias ..2='cd ../..'
 alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 
-export TRASH_PATH='/home/yinhailiu/.trash'
+if [ -f ~/.bash_var ]; then
+   . ~/.bash_var
+fi
+
+# export TRASH_PATH='/home/yinhailiu/.trash'
 mkdir -p ${TRASH_PATH}
 alias rm=trash
 alias rl='ls ${TRASH_PATH}'
